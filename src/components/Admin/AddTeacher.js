@@ -13,7 +13,7 @@ const AddTeacher = () => {
             img: imageURL
         };
         console.log(eventData);
-        fetch('http://localhost:5000/addTeacher', {
+        fetch('https://still-beyond-51979.herokuapp.com/addTeacher', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
