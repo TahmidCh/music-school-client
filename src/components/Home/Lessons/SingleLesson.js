@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './SingleLesson.css'
+import './SingleLesson.css';
+
+
 
 const SingleLesson = ({ lesson }) => {
-    
+
     return (
         <div>
             <Link to='/checkout/payment'>
-                <div className="singleLesson">
-                    <img style={{ width: '70px' }} src={lesson.img} alt="" />
-                    <h4>{lesson.name}</h4>
-                </div>
+                <button class="transition me-5">
+                    <img style={{width: '70px'}} src={lesson.img} alt=""/>
+                </button>
+                <h5 className="ms-4">{lesson.name}</h5>
             </Link>
         </div>
 

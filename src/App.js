@@ -13,6 +13,7 @@ import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home/Home";
 import LessonsPage from "./components/LessonsPage/LessonsPage";
 import Login from "./components/Login/Login";
+import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 
 export const UserContext = createContext();
 
@@ -30,18 +31,18 @@ const [loggedInUser, setLoggedInUser]= useState({});
         <Route path="/lessons">
           <LessonsPage></LessonsPage>
         </Route>
-        <Route path="/checkout/payment">
+        <PrivateRoute path="/checkout/payment">
           <Payment></Payment>
-        </Route>
+        </PrivateRoute>
         <Route path="/checkout/review">
           <Review></Review>
         </Route>
         <Route path="/admin/teacher">
           <Admin></Admin>
         </Route>
-        <Route path="/admin/manage">
+        <PrivateRoute path="/admin/manage">
           <ManageLessons></ManageLessons>
-        </Route>
+        </PrivateRoute>
         <Route path="/contact">
           <Contact></Contact>
         </Route>
