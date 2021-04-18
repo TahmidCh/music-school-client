@@ -1,35 +1,14 @@
-import React from 'react';
-import guitar from '../../../icons/guitar.png'
-import drums from '../../../icons/drums.png'
-import flute from '../../../icons/flute.png'
-import bass from '../../../icons/bass-guitar.png'
-import vocalist from '../../../icons/vocalist.png'
+import React, { useEffect, useState } from 'react';
 import SingleLesson from './SingleLesson';
 
-const lessons=[
-    {
-        name: 'Guitar',
-        img: guitar
-    },
-    {
-        name: 'Flute',
-        img: flute
-    },
-    {
-        name: 'Bass',
-        img: bass
-    },
-    {
-        name: 'Vocalist',
-        img: vocalist
-    },
-    {
-        name: 'Drums',
-        img: drums
-    },
-]
 
 const LessonsAll = () => {
+    const [lessons, setLessons] = useState([]);
+    useEffect(() => {
+        fetch('https://still-beyond-51979.herokuapp.com/lessons')
+            .then(res => res.json())
+            .then(data => setLessons(data))
+    }, [])
     return (
         <div className="container d-flex justify-content-center align-items-center mt-5 mb-5 justify-content-evenly">
             {

@@ -4,6 +4,7 @@ import LessonsMain from '../Home/Lessons/LessonsMain';
 import Footer from '../Shared/Footer/Footer';
 import logo from '../../images/dhrupod logo.png'
 import './LessonPage.css'
+import { Link } from 'react-router-dom';
 
 const LessonsPage = () => {
     return (
@@ -12,7 +13,9 @@ const LessonsPage = () => {
 
                 <nav id="sidebar">
                     <div class="sidebar-header">
+                        <Link to="/home">
                         <img style={{ width: "150px" }} src={logo} alt="" />
+                        </Link>
                     </div>
 
                     <ul class="list-unstyled components">

@@ -19,12 +19,13 @@ const ManageLessons = () => {
                                 <a href="teacher">Add Teacher</a>
                             </li>
                             <li>
-                                <a href="manage">Manage Lessons</a>
+                                <a href="manage">Add Lessons</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div className="col-md-9">
+                    <h2>Add Lesson</h2>
                     <AddLesson></AddLesson>
                 </div>
 

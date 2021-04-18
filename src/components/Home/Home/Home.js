@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import LessonsMain from '../Lessons/LessonsMain';
 import LittleMagic from '../LittleMagic/LittleMagic'
 import MusicForAll from '../MusicForAll/MusicForAll';
+import Teachers from '../Teachers/Teachers';
 import Testimonial from '../Testimonials/Testimonial';
 import TestimonialsMain from '../Testimonials/TestimonialsMain';
 import WhyUsMain from '../WhyUs/WhyUsMain';
@@ -17,6 +18,7 @@ const Home = () => {
             <LittleMagic></LittleMagic>
             <LessonsMain></LessonsMain>
             <MusicForAll></MusicForAll>
+            <Teachers></Teachers>
             <TestimonialsMain></TestimonialsMain>
             <Footer></Footer>
         </div>

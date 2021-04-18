@@ -18,7 +18,7 @@ const Admin = () => {
                                 <a href="teacher">Add Teacher</a>
                             </li>
                             <li>
-                                <a href="manage">Manage Lessons</a>
+                                <a href="manage">Add Lessons</a>
                             </li>
                             
                         </ul>
