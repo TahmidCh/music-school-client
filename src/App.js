@@ -37,9 +37,9 @@ const [loggedInUser, setLoggedInUser]= useState({});
         <Route path="/checkout/review">
           <Review></Review>
         </Route>
-        <Route path="/admin/teacher">
+        <PrivateRoute path="/admin/teacher">
           <Admin></Admin>
-        </Route>
+        </PrivateRoute>
         <PrivateRoute path="/admin/manage">
           <ManageLessons></ManageLessons>
         </PrivateRoute>
