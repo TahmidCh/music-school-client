@@ -1,0 +1,25 @@
+.footer-area{
+    background-image: url('../../../images/footer2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+}
+
+.footer-area li{
+    padding-bottom: 10px;
+}
+
+.social-media .icon{
+    height: 40px;
+    width: 40px;
+    color: red;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 10px;
+}
+.social-media .active-icon{
+    background-color: red ;
+    color:white;
+}

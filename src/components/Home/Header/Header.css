@@ -1,0 +1,21 @@
+.header{
+    background-image: url('../../../images/header.png');
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 650px;
+    position: relative;
+}
+
+.header div{
+    justify-content: center;
+    align-items: center;
+}
+
+.headerInnerDiv h1{
+    font-size: 70px;
+}
+
+.logo{
+    width:150px;
+}

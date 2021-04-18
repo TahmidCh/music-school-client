@@ -1,0 +1,9 @@
+.littleMagic{
+    background: url('../../../images/littleMagic.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.littleMagic-Inner{
+    text-align: center;
+}

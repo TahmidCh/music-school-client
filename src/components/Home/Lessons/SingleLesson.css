@@ -1,0 +1,11 @@
+.singleLesson{
+    padding: 20px;
+}
+
+.singleLesson:hover{
+    -moz-box-shadow:    inset 0 0 8px #000000;
+   -webkit-box-shadow: inset 0 0 8px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+    
+}
+
